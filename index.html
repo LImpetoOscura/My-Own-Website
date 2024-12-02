@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ser Keshawn's Court</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: "Garamond", serif;
+            line-height: 1.8;
+            margin: 0;
+            background-color: #1c1c1c;
+            color: #f5f5f5;
+            padding: 0;
+            background-image: url("images\royal-gothic-flourish.jpg"); /* Update with your actual image path */
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(45deg, rgba(43, 43, 43, 0.7), rgba(74, 74, 74, 0.7));
+            color: gold;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid gold;
+        }
+
+        header h1 {
+            font-family: "Cinzel", serif;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #3e3e3e;
+            display: flex;
+            justify-content: center;
+            border-bottom: 3px solid gold;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f5f5f5;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            display: block;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background-color: gold;
+            color: black;
+            border-radius: 5px;
+        }
+/* Gallery Section */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-item img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 400px; /* Set a max width to control the size */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
+    transition: transform 0.3s ease-in-out; /* Optional: adds smooth transition */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Optional: adds a zoom effect on hover */
+}
+
+        /* Section Styling */
+        section {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(43, 43, 43, 0.8); /* Slight opacity */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            font-family: "Cinzel", serif;
+            color: gold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1rem;
+            text-align: left;
+            color: #f5f5f5;
+            background-color: rgba(43, 43, 43, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            overflow: hidden; /* For rounded corners */
+        }
+
+        th {
+            background-color: #3e3e3e;
+            color: gold;
+            text-align: center;
+            font-family: "Cinzel", serif;
+            padding: 15px;
+            font-size: 1.2rem;
+            border-bottom: 2px solid gold;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #565656;
+            font-family: "Garamond", serif;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(58, 58, 58, 0.8);
+        }
+
+        tr:hover {
+            background-color: rgba(74, 74, 74, 0.9);
+            box-shadow: 0 0 10px gold;
+            cursor: pointer;
+            transform: scale(1.01);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #3e3e3e;
+            color: #f5f5f5;
+            font-size: 0.9rem;
+            border-top: 3px solid gold;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#current-classes">Current Classes</a></li>
+            <li><a href="#my-favorites">My Favorites</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Ser Keshawn's Court</h1>
+        <p>A portal of creativity, wisdom, and regality—step into my realm.</p>    
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>
+            Greetings, noble visitor! My name is Ser Keshawn Jones, a visionary student at Oakland Community College. With a profound admiration for the arts—paintings, sculptures, sketches—I endeavor to create masterpieces of my own in the realms of technology and storytelling. 
+        </p>
+        <p>
+            My pursuits lead me toward a career in software programming, particularly in game design, where I strive to craft fantastical worlds inspired by my youthful dreams. Venture further and uncover the essence of my creativity!
+        </p>
+    </section>
+
+    <!-- Current Classes Section -->
+    <section id="current-classes">
+        <h2>Current Classes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CIS 1300</td>
+                    <td>Introduction to Computer Information Systems: Covers computer systems, software, hardware, and their role in business operations.</td>
+                </tr>
+                <tr>
+                    <td>CIS 1200</td>
+                    <td>Database Management Systems: Focuses on the concepts, design, and management of relational databases, including SQL and data integrity.</td>
+                </tr>
+                <tr>
+                    <td>CIS 1420</td>
+                    <td>Web Development: Introduces the principles of web design and development using HTML, CSS, and JavaScript to build responsive websites.</td>
+                </tr>
+                <tr>
+                    <td>COM 1290</td>
+                    <td>Business Communication: Teaches effective communication techniques for creating professional documents and presentations.</td>
+                </tr>
+                <tr>
+                    <td>ENG 1510</td>
+                    <td>Composition and Rhetoric: Develops academic writing skills with a focus on critical thinking, argumentation, and audience engagement.</td>
+                </tr>
+                <tr>
+                    <td>PHI 1710</td>
+                    <td>Introduction to Logic: Introduces principles of logical reasoning, covering argument analysis, formal logic, and fallacies.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Favorites Section -->
+    <section id="my-favorites">
+        <h2>My Favorites</h2>
+        <h3>Favorite Movies</h3>
+        <ul>
+            <li><a href="https://www.imdb.com/title/tt0327597/" target="_blank" rel="noopener noreferrer">Coraline</a></li>
+            <li><a href="https://www.imdb.com/list/ls023657263/" target="_blank" rel="noopener noreferrer">Pirates of the Caribbean Trilogy</a></li>
+            <li><a href="https://www.rottentomatoes.com/m/tekkonkinkreet" target="_blank" rel="noopener noreferrer">Tekkonkenkreet</a></li>
+        </ul>
+        <h3>Favorite Stories</h3>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Coraline" target="_blank" rel="noopener noreferrer">Coraline</a></li>
+            <li><a href="https://megamitensei.fandom.com/wiki/Persona_3" target="_blank" rel="noopener noreferrer">Persona 3</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/King_Arthur" target="_blank" rel="noopener noreferrer">King Arthur and the Knights of the Round Table</a></li>
+        </ul>
+    </section>
+
+    <!-- Upcoming Projects Section -->
+    <section id="upcoming-projects" style="text-align: center; margin: 40px auto; padding: 20px; background-color: rgba(74, 74, 74, 0.9); border: 2px solid gold; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); max-width: 800px;">
+        <h2 style="font-family: 'Cinzel', serif; color: gold; margin-bottom: 20px;">Upcoming Projects</h2>
+        <p style="font-size: 1.2rem; color: #f5f5f5; line-height: 1.6;">
+            Curious about what's next? The court is expanding, and I’m building a new digital realm where creativity, exploration, and mystery come alive. Starting with one of the many mythologies that I hold dear and supported my ideals to create art, Fallen Angels of the Grigori. (Work in Progress)
+        </p>
+        <a href="file:///C:/Users/kingj/Desktop/1st%20Webpage/Fallen%20Angels%20Wiki.html" target="_blank" rel="noopener noreferrer" 
+   style="display: inline-block; padding: 15px 30px; margin-top: 15px; font-size: 1.2rem; font-family: 'Cinzel', serif; font-weight: bold; color: #1c1c1c; background: gold; text-decoration: none; border: 2px solid #1c1c1c; border-radius: 10px; transition: background 0.3s ease-in-out, color 0.3s ease-in-out;">
+    Visit the Portal to Fallen Angels
+</a>
+        
+        <p style="font-size: 1rem; margin-top: 10px; color: #d1d1d1;">
+            Stay tuned for updates!
+        </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+
+    <h2>Gallery</h2>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/ShawnShawn.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/ANightinVegas.jpg" alt="Image 2">
+        </div>
+    </div>
+
+    <div class="image-links">
+        <h3>Inspiring Images</h3>
+        <ul>
+            <li><a href="https://www.creativeuncut.com/gallery-02/kh2-world-that-never-was.html" target="_blank"><img src="images/image1.jpg" alt="The World that Never Was" /></a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Aurora_Borealis_(painting)" target="_blank"><img src="images/image2.jpg" alt="Aurora Borealis" /></a></li>
+            <!-- Add more links here if desired -->
+        </ul>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Ser Keshawn's Court © 2024. Designed with honor and grace.</p>
+    </footer>
+</body>
+</html>
+
